@@ -1,25 +1,31 @@
 .NavbarItems{
-    background-color: rgb(56, 90, 117);
-    height: 80px;
+    background-color: rgb(34, 54, 121);
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
+}
+
+.nav-title {
+    justify-self: end;
+    margin-right: 3rem;
     color: white;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
+.nav-menu {
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 1.2rem;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: start;
 }
 
-li {
-    width: 2.5em;
-    padding: 10px;
-    margin: 0;
-}
-
-a:link, a:visited {
+.nav-links {
+    color: white;
     text-decoration: none;
-    color: white;
+    padding: 0.5em 1rem;
 }

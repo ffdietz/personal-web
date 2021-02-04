@@ -10,7 +10,7 @@ export default class Navbar extends Component {
                 <div className="menu-icon">
 
                 </div>
-                <ul>
+                <ul className="nav-menu">
                     { MenuItems.map( (item, index) => {
                       return (
                             <li key={index}>
@@ -22,7 +22,7 @@ export default class Navbar extends Component {
                     })}
                 </ul>
                 
-                <h1> <strong> Felipe Fierro </strong></h1>
+                <h1 className="nav-title"> <strong> Felipe <br></br>Fierro Dietz </strong></h1>
             </nav>
         )
     }
