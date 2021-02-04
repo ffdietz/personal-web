@@ -29,14 +29,14 @@ function draw() {
 
   translate(0, 0, -80);
   //translate(width/2, height/2);
-  scale(7);
+  scale(7.5);
   stroke(255);
   noFill();
 
   beginShape()
-  stroke(255, 20);
+  stroke(255, 100);
   for (let v of points) {
-    ellipse(v.x, v.y, v.z);
+    arc(v.x, v.y, v.z, 3, 0, PI * v.z / v.x);
   }
   endShape();
 
