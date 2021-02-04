@@ -1,0 +1,25 @@
+.NavbarItems{
+    background-color: rgb(56, 90, 117);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    width: 2.5em;
+    padding: 10px;
+    margin: 0;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
