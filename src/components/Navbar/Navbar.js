@@ -22,7 +22,11 @@ export default class Navbar extends Component {
                     })}
                 </ul>
                 
-                <h1 className="nav-title"> <strong> Felipe <br></br>Fierro Dietz </strong></h1>
+                <h1 className="nav-title"> 
+                    <strong> 
+                        Felipe<br></br>Fierro Dietz
+                        </strong>
+                </h1>
             </nav>
         )
     }
