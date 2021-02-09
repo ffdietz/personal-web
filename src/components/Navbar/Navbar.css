@@ -1,6 +1,6 @@
 .NavbarItems{
-    background-color:white;
-    border-bottom: 0.1rem solid black;
+    background-color:rgb(240, 240, 240);
+    /* border-bottom: 0.1rem solid black; */
     height: 150px;
     display: flex;
     justify-content: space-between;
@@ -8,10 +8,12 @@
     font-size: 1.2rem;
 }
 
-.nav-title {
+.nav-title {    
+    font-size: 1.6rem;
+    font-weight: bolder;
     justify-self: end;
     margin-right: 4rem;
-    color:black;
+    color:rgb(150, 150, 150);
 }
 
 .nav-menu {
@@ -26,7 +28,12 @@
 }
 
 .nav-links {
-    color: black;
+    color: rgb(150, 150, 150);
     text-decoration: none;
     padding: 0.5em 1rem;
+}
+
+.menu-icon {
+    font-size: 2.5rem;
+    color: rgb(150, 150, 150);
 }

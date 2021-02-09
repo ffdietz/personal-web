@@ -3,13 +3,24 @@ import { MenuItems } from './NavbarItems'
 import './Navbar.css';
 
 export default class Navbar extends Component {
+    state = { 
+        clicked : true 
+    }
+
+    handleClick = () => {
+        this.setState({
+            clicked: !this.state.clicked
+        })
+    }
 
     render(){
         return (
             <nav className="NavbarItems">
-                <div className="menu-icon">
 
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
+
                 <ul className="nav-menu">
                     { MenuItems.map( (item, index) => {
                       return (
@@ -18,14 +29,12 @@ export default class Navbar extends Component {
                                    {item.title} 
                                 </a>
                             </li>
-                            )  
+                        )
                     })}
                 </ul>
                 
-                <h1 className="nav-title"> 
-                    <strong> 
+                <h1 className="nav-title">
                         Felipe<br></br>Fierro Dietz
-                        </strong>
                 </h1>
             </nav>
         )
