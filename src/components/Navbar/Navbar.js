@@ -22,7 +22,7 @@ export default class Navbar extends Component {
                 </div>
 
                 <ul className={ this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    { MenuItems.map( (item, index) => {
+                    { MenuItems.map((item, index) => {
                       return (
                             <li key={index}>
                                 <a className={item.cName} href={item.url}>
@@ -33,7 +33,7 @@ export default class Navbar extends Component {
                     })}
                 </ul>
                 
-                <h1 className="nav-title">
+                <h1 className="navbar-title">
                         Felipe<br></br>Fierro Dietz
                 </h1>
             </nav>
