@@ -10,7 +10,7 @@ export default class About extends Component {
 
     handleClick = () => {
         this.setState({
-            clicked: !this.state.clicked
+            clicked: this.state.clicked
         })
     }
 
