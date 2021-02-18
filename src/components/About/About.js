@@ -5,12 +5,13 @@ import './About.css';
 
 export default class About extends Component {
     state = {
-        clicked: true
+        lang: 'esp'
     }
 
-    handleClick = () => {
+    handleClick = (props) => {
+        console.log(props);
         this.setState({
-            clicked: this.state.clicked
+            lang: this.props.language
         })
     }
 
@@ -25,7 +26,7 @@ export default class About extends Component {
                     <div className="buttons-container">
                         {AboutVersion.map ((item, index) => {
                             return (
-                                <Button key={index} className="language-button" onClick={this.setState.clicked}>
+                                <Button key={index} className="language-button" onClick={ () => this.handleClick(item.language)}>
                                     {item.language}
                                 </Button>
                             )
@@ -33,13 +34,16 @@ export default class About extends Component {
                     </div>
                 </div>
 
-                {/* <div className="biography-container">
-                    { AboutVersion.filter () => {
-                            <p className={.cName}>
-                                {.text}
+                <div className="biography-container">
+                    {/* { AboutVersion.filter(this.state.lang) => {
+                        return(
+                            <p>
+                                {AboutVersion.text}
                             </p>
-                         }
+                            )
+                        }
                     } */}
+                </div>
 
                     {/* ESP<br></br>
                     Es artista visual e investigador chileno, actualmente con base en Berlin.
