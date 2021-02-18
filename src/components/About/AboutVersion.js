@@ -1,5 +1,5 @@
 
-export const AboutVersions = [
+export const AboutVersion = [
 
     {
         language: 'esp',
@@ -11,5 +11,4 @@ export const AboutVersions = [
         text: 'He is a Chilean visual artist and researcher, currently based in Berlin. His early foray into science and subsequent training as a photographer artist, has led him to work on the relationships between visual arts and scientific language, using electrical / electronic technologies as a communicating bridge.',
         cName: 'biography-txt'
     }
-
 ]

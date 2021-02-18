@@ -4,7 +4,7 @@ import './Navbar.css';
 
 export default class Navbar extends Component {
     state = { 
-        clicked : true 
+        clicked : true
     }
 
     handleClick = () => {
